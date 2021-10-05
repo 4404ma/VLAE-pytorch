@@ -82,7 +82,7 @@ def main(args):
         ##############
         # PREPARES MODEL
         args.img_size = get_img_size(args.dataset)  # stores for metadata
-        cs = [1, 64, 128, 1024]
+        cs = [1, 64, 256, 4096] #cs = [1, 64, 128, 1024]
         model = VLAE(args, args.latent_dim, cs)
 
         #TRAINS
